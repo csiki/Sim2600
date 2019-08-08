@@ -251,7 +251,7 @@ class Sim2600Console:
         progHex = ''
         count = 0
         for byte in byteStr:
-            intVal = struct.unpack ('1B', byte)[0]
+            intVal = byte  # byte  # struct.unpack('1B', byte)[0]
             progHex += '%2.2X '%intVal
             count += 1
             if count == 8:

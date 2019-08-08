@@ -1,2 +1,6 @@
 *.pyc
 *~
+.idea/
+sim2600/outFrames/
+*.pyxbldc
+

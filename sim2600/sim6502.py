@@ -208,7 +208,7 @@ class Sim6502Sets(CircuitSimulatorSets):
 class MySim6502(MyCircuitSimulator):
     def __init__(self, chipfile = params.chip6502File):
         MyCircuitSimulator.__init__(self)
-        print "MySim6502 Loading", chipfile
+        print("MySim6502 Loading", chipfile)
         self.loadCircuit(chipfile)
 
         # No need to update the names based on params.mos6502WireInit.
@@ -278,7 +278,7 @@ class MySim6502(MyCircuitSimulator):
         self.setHighWN('NMI')  # no interrupt
         self.setHighWN('RDY')  # let the chip run.  Will connect to TIA with pullup
         self.recalcWireNameList(['IRQ','NMI','RES','RDY'])
-        for i in xrange(4):
+        for i in range(4):
             if i % 2:
                 self.setLowWN('CLK0')
             else:

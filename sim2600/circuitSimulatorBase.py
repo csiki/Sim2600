@@ -210,7 +210,7 @@ class CircuitSimulatorBase:
         if wire != None:
             wire.setHigh()
         else:
-            print 'ERROR - trying to set wire None high'
+            print('ERROR - trying to set wire None high')
 
     def setLowWN(self, n):
         if n in self.wireNames:
@@ -223,7 +223,7 @@ class CircuitSimulatorBase:
         if wire != None:
             wire.setLow()
         else:
-            print 'ERROR - trying to set wire None low'
+            print('ERROR - trying to set wire None low')
 
     def setHigh(self, wireIndex):
         self.wireList[wireIndex].setPulledHighOrLow(True)
@@ -312,7 +312,7 @@ class CircuitSimulatorBase:
         if not os.path.exists(filePath):
             raise Exception('Could not find circuit file: %s  from cwd %s'%
                             (filePath, os.getcwd()))
-        print 'Loading %s' % filePath
+        print('Loading %s' % filePath)
         
         of = open (filePath, 'rb')
         rootObj = pickle.load (of)

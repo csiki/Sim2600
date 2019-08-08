@@ -41,8 +41,7 @@ class MainSim:
         # a cartridge ROM file holding the program instructions.
         #
         #self.sim = Sim2600Console(params.romFile)
-        self.sim = Sim2600Console(params.romFile, 
-                                  sim6502.MySim6502, simTIA.MySimTIA)
+        self.sim = Sim2600Console(params.romFile, sim6502.MySim6502, simTIA.MySimTIA)
 
         # For measuring how fast the simulation is running
         self.lastUpdateTimeSec = None
