@@ -2,5 +2,6 @@
 *~
 .idea/
 sim2600/outFrames/
+sim2600/outFrames_fixed/
 *.pyxbldc
 
